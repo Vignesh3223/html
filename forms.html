@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Design</title>
+    <style>
+        form {
+            font-size: large;
+            font-family: 'Times New Roman';
+            background-color:antiquewhite;
+            margin-top: 20px;
+            margin-left: 35px;
+            margin-right: 25px;
+            margin-bottom: 20px;
+            width: 90%;
+            padding:50px;
+            border-style: groove;
+            border-color: rgb(12, 130, 226);
+            border-width: 5px;
+        }
+        body{
+            background-color: aquamarine;
+            border-style: dashed;
+            border-color: black;
+            border-width: 5px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="font-family: 'Times New Roman';text-align: center;">REGISTRATION FORM</h1>
+    <form action="https://www.cgvakindia.com/" method="post">
+        <fieldset>
+            <legend>
+                Trainee Registration
+            </legend>
+            <label>Trainee Name</label><br>
+            <input type="text" name="tname" placeholder="Name" required><br><br>
+            <label>Trainee Email</label><br>
+            <input type="email" name="email" placeholder="Email" required><br><br>
+            <label>Password</label><br>
+            <input type="password" name="password" placeholder="xxxxxxxx" required><br>
+            <input type="checkbox" value="remember-pass"><label>Remember Password</label><br><br>
+            <label>Gender</label><br>
+            <input type="radio" id="gender" name="gender" value="Female">Female<br>
+            <input type="radio" id="gender" name="gender" value="Male">Male<br><br>
+            <label>Address</label><br>
+            <textarea></textarea><br><br>
+            <label>DOB</label><br>
+            <input type="date"><br><br>
+            <label>Choose Profession</label><br>
+            <select name="profession">
+                <optgroup label="Developer">
+                    <option>Front-end</option>
+                    <option>Back-end</option>
+                    <option>Full-stack</option>
+                </optgroup>
+                <optgroup label="Sales">
+                    <option>Executive</option>
+                    <option>Manager</option>
+                </optgroup>
+            </select><br><br>
+            <label>Mobile Number</label><br>
+            <input type="tel" pattern="[0-9]{10}" required><br><br>
+            <label>Telephone Number</label><br>
+            <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" required><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+
+</html>
