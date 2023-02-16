@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design</title>
+    <style>
+        div.details{
+            display:inline-block;
+            width: 100%;
+            height:2000px;
+        }
+        .horizon{
+            background-color: aquamarine;
+            text-align:right;
+            width:95%;
+        }
+        .horizon li{
+            font-size: 25px;
+            display: inline;
+            padding: 10px;
+        }
+        nav{
+            float: left;
+            max-width: 15%;
+            height: inherit;
+            padding: 10px;
+        }
+        nav ul{
+            list-style-type:square;
+            padding:0;
+        }
+        nav ul a{
+            text-decoration: solid;
+        }
+        article {
+            float: left;
+            margin-left: 20px;
+            padding: 10px;
+            max-width: 70%;
+            height: inherit;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Header-->
+    <div class="details">
+    <header>
+        <img src="assets\icon.png" alt="IndiaBIX" style="float: left;">
+        <h1>START LEARNING PROGRAMMING</h1>
+        <ul class="horizon">
+            <li>Contact</li>
+            <li>Sign Up</li>
+            <li>Profile</li>
+            <li>Log in / Log out</li>
+            <hr>
+        </ul>
+    </header>
+    </div>
+    <!--Navigation-->
+    <nav>
+        <h1>CONTENTS</h1>
+        <ul>
+            <li>Programming Languages</li>
+           <li><a href="#para1">C</a></li>
+           <li><a href="#para2">C++</a></li>
+           <li><a href="#para3">Java</a></li>
+           <li><a href="#para4">Python</a></li>
+           <li><a href="#para5">C#</a></li>
+           <hr>
+           <li>Designing Languages</li>
+           <li><a href="#para6">HTML</a></li>
+           <li><a href="#para7">CSS</a></li>
+           <li><a href="#para8">Javascript</a></li>
+           <li><a href="#para9">PHP</a></li>
+           <hr>
+           <li>Database</li>
+           <li><a href="#para10">MySql</a></li>
+           <li><a href="#para11">Oracle</a></li>
+        </ul>
+    </nav>
+    <!--Article tag-->
+    <article>
+        <h1>DESCRIPTION</h1>
+        <p id="para1">
+            <img src="assets\cprog.png" alt="C Programming" height="100px" width="100px" style="float: left;">
+            C is a general-purpose programming language created by Dennis Ritchie at the Bell Laboratories in 1972.<br>
+            It is a very popular language, despite being old.<br>
+            C is strongly associated with UNIX, as it was developed to write the UNIX operating system.</p>
+        <p id="para2">
+            <img src="assets\c++.png" alt="C++ Programming" height="100px" width="100px" style="float: left;">  
+            C++ is a cross-platform language that can be used to create high-performance applications.<br>
+            C++ was developed by Bjarne Stroustrup, as an extension to the C language.<br>
+            C++ gives programmers a high level of control over system resources and memory.<br>
+        </p>
+        <p id="para3">
+            <img src="assets\java.png" alt="Java" height="100px" width="100px" style="float: left;">
+            Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.<br>
+            It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA) meaning that compiled Java code can run on all platforms that support Java without the need to recompile.<br>
+            Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture.
+        </p>
+        <p id="para4">
+            <img src="assets\python.png" alt="Python" height="100px" width="100px" style="float: left;">
+            Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.<br>
+            Python is dynamically typed and garbage-collected.<br>
+            It supports multiple programming paradigms, including structured, object-oriented and functional programming. 
+        </p>
+        <p id="para5">
+            <img src="assets\c#.png" alt="C#" height="100px" width="100px" style="float: left;">
+            C# is a general-purpose high-level programming language supporting multiple paradigms.<br>
+            C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming discipline.
+        </p>
+        <p id="para6">
+            <img src="assets\html.png" alt="HTML" height="100px" width="100px" style="float: left;">
+            The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.<br>
+            It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.
+            </p>
+        <p id="para7">
+            <img src="assets\css.png" alt="CSS" height="100px" width="100px" style="float: left;">
+            Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML.<br>
+            CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+        </p>
+        <p id="para8">
+            <img src="assets\js.png" alt="Javascript" height="100px" width="100px" style="float: left;">
+            JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.<br>
+            As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.
+        </p>
+        <p id="para9">
+            <img src="assets\php.png" alt="PHP" height="100px" width="100px" style="float: left;">
+            PHP is a general-purpose scripting language geared toward web development.<br>
+            It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1993 and released in 1995.<br>
+            The PHP reference implementation is now produced by The PHP Group.
+        </p>
+        <p id="para10">
+            <img src="assets\mysql.png" alt="MySQL" height="100px" width="100px" style="float: left;">
+            MySQL is an open-source relational database management system.<br>
+            Its name is a combination of "My", the name of co-founder Michael Widenius's daughter My, and "SQL", the acronym for Structured Query Language.
+        </p>
+        <p id="para11">
+            <img src="assets\oracle.png" alt="Oracle" height="100px" width="100px" style="float: left;">
+            Oracle is a relational database system that provides self-driving, self-securing, self-repairing, and designed to eliminate error-prone manual database management.<br>
+            Oracle is a cross-platform database system which can run on the various operating system. It allows to store and retrieve data quickly and safely.<br>
+            It is available free for the student but cannot use for commercial purposes.<br>
+            It is the first database software developed for business purposes to manipulate data using a query language.<br>
+            Oracle was released in 1980 with basic SQL features. This software is scalable, portable, distributed, and programmable.
+        </p>
+    </article>
+    <aside>
+        <h1>START CODING</h1>
+        <br>
+        <hr>
+        <iframe width="200px" height="200px" src="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi129XKxJn9AhU2mGYCHa0PAA4YABABGgJzbQ&ohost=www.google.com&cid=CAESbeD2B7SHuxzO_oTOrzDxpre0iZrauobIXb6zX-f71HLoGVKKzDoA6xFgzTrJ_IILnRrECAnYjCKNpBzTxL5_giJiOsi4i5oy405ugaHDugiCo8U80TBMtfgLbBERu43zlHqroQ3dBrIfRZrCKCg&sig=AOD64_3B3BWXAju2oJLFG_o_mzKY4bsFGg&q&adurl&ved=2ahUKEwj50M7KxJn9AhVw8DgGHVcTBGsQ0Qx6BAgIEAE">
+        </iframe>
+    </aside>
+</body>
+</html>
