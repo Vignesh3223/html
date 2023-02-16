@@ -16,10 +16,19 @@
             height: 3000px;
         }
 
+        #wc {
+            color: midnightblue;
+            text-align: right;
+            font-family: algerian;
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+
         #head {
             color: green;
             font-size: xx-large;
             font-family: TIMES NEW ROMAN;
+            font-weight: bolder;
             text-align: center;
         }
 
@@ -94,52 +103,74 @@
         }
 
         #para1 {
-            color: crimson;
+            color: firebrick;
             font-size: large;
             font-family: times new roman;
+            font-weight: bold;
         }
 
         #para2 {
             color: black;
             font-size: large;
             font-family: times new roman;
+            font-weight: bold;
         }
 
         #para3 {
             color: deeppink;
             font-size: large;
             font-family: times new roman;
+            font-weight: bold;
         }
 
         #para4 {
             color: blueviolet;
             font-size: large;
             font-family: times new roman;
+            font-weight: bold;
         }
 
         #para5 {
             color: darkgreen;
             font-size: large;
             font-family: times new roman;
+            font-weight: bold;
         }
 
         #para6 {
             color: darkslategrey;
             font-size: large;
             font-family: times new roman;
+            font-weight: bold;
         }
 
         #para7 {
             color: darkmagenta;
             font-size: large;
             font-family: times new roman;
+            font-weight: bold;
         }
 
         ul {
             color: red;
             font-size: large;
             font-family: times new roman;
-            list-style-type:circle;
+            list-style-type: circle;
+            font-weight: bold;
+        }
+
+        img {
+            padding: 10px;
+            width: 150px;
+            height: 150px;
+            margin-left: 15px;
+            opacity: 0.2;
+        }
+
+        img:hover {
+            opacity: 2.0;
+            width: 200px;
+            height: 200px;
         }
 
         body {
@@ -152,7 +183,9 @@
     <!--Header-->
     <div class="details">
         <header>
-            <img src="assets\download.png" alt="CSS-ICON" height="90px" width="100px" style="float: left;">
+            <pre id="wc">
+                WELCOME TO LEARN CSS
+            </pre>
             <ul class="horizon">
                 <li>Home</li>
                 <li>About</li>
@@ -178,7 +211,7 @@
         <!--Article tag-->
         <article>
             <h1>ARTICLE</h1><br>
-            <img src="assets\css.png" alt="CSS" height="200px" width="180px" style="float:left;">
+            <img src="assets\css.png" alt="CSS" height="250px" width="180px" style="float:left;">
             <h1>INTRODUCTION</h1>
             <p id="para1">
                 CSS stands for Cascading Style Sheets.<br><br>
@@ -209,6 +242,7 @@
                 The grouping selector selects all the HTML elements with the same style definitions.<br><br>
             </p><br><br>
             <h1>BORDERS</h1>
+            <img src="assets\css3.jpg" alt="CSS3" height="200px" width="400px" style="float:right;">
             <p id="para4">
                 The border-style property specifies what kind of border to display.<br>
             <ul>
