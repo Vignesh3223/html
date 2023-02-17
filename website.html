@@ -103,7 +103,7 @@
         aside {
             margin-top: 100px;
             margin-left: 50px;
-            float:left;
+            float: left;
             padding: 10px;
             max-width: 25%;
             height: inherit;
@@ -166,7 +166,7 @@
             font-weight: bold;
         }
 
-        img {
+        img.two {
             padding: 10px;
             width: 150px;
             height: 150px;
@@ -174,7 +174,21 @@
             opacity: 0.2;
         }
 
-        img:hover {
+        img.two:hover {
+            opacity: 2.0;
+            width: 200px;
+            height: 200px;
+        }
+
+        img.three {
+            padding: 10px;
+            width: 300px;
+            height: 300px;
+            margin-left: 15px;
+            opacity: 0.2;
+        }
+
+        img.three:hover {
             opacity: 2.0;
             width: 200px;
             height: 200px;
@@ -205,10 +219,13 @@
         }
     </style>
 </head>
+
 <body>
     <!--Header-->
     <div class="details">
         <header>
+            <img class="one" src="assets\W3Schools_logo.png" alt="W3 Schools" height="100" width="350"
+                style="float: left;">
             <pre id="wc">
                 WELCOME TO LEARN CSS
             </pre>
@@ -237,7 +254,7 @@
         <!--Article tag-->
         <article>
             <h1>ARTICLE</h1><br>
-            <img src="assets\css.png" alt="CSS" height="250px" width="180px" style="float:left;">
+            <img class="two" src="assets\css.png" alt="CSS" height="250px" width="180px" style="float:left;">
             <h1>INTRODUCTION</h1>
             <p id="para1">
                 CSS stands for Cascading Style Sheets.<br><br>
@@ -280,7 +297,7 @@
                 The grouping selector selects all the HTML elements with the same style
                 definitions.</p><br>
             <h1>BORDERS</h1>
-            <img src="assets\css3.jpg" alt="CSS3" height="200px" width="400px" style="float:right;">
+            <img class="three" src="assets\css3.jpg" alt="CSS3" height="150px" width="250px" style="float:right;">
             <p id="para4">
                 The border-style property specifies what kind of border to display.<br>
             <ul>
