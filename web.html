@@ -6,39 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Favicon-->
-    <link rel="icon" src="assets\icom1.png">
-    <title>Website</title>
+    <link rel="icon" href="assets\icom1.png">
+    <title>Wild Learner</title>
     <style>
         div.container {
             display: inline-block;
             width: 100%;
-            height: 4000px;
+            height: 5000px;
 
         }
 
         header,
         footer {
             padding: 10px;
-            background-color: cyan;
+            background-color: rgb(245, 129, 129);
             clear: left;
             text-align: center;
         }
 
         .horizon {
-            background-color: blueviolet;
+            background-color: rgb(191, 125, 253);
             text-align: right;
             width: auto;
         }
 
-        .horizon ul {
-            color: bisque;
+        .horizon li {
+            display: inline-block;
+            color: rgb(8, 22, 177);
             font-family: algerian;
-            font-size: 25px;
-            display: inline;
-            padding: 10px;
+            font-size: xx-large;
+            font-weight: bolder;
+            padding: 50px;
+            height: 15px;
+            list-style-type: none;
+        }
+
+        .horizon a {
+            color: rgb(2, 72, 72);
         }
 
         nav {
+            margin-left: 0%;
             float: left;
             max-width: 15%;
             height: inherit;
@@ -48,29 +56,288 @@
         nav ul {
             list-style-type: square;
             padding: 20px;
-            font-size: x-large;
+            font-size: xx-large;
             font-family: algerian;
+            color: rgb(12, 189, 237);
         }
 
         nav ul a {
             text-decoration: solid;
         }
 
+        a:link {
+            color: rgb(4, 68, 95);
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:hover {
+            color: rgb(196, 234, 11);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(250, 69, 177);
+            background-color: rgb(8, 196, 243);
+        }
+
         article {
             float: left;
             margin-left: 20px;
             padding: 10px;
-            max-width: 70%;
+            max-width: 65%;
             height: inherit;
+        }
+
+        h1 {
+            font-family: algerian;
+            font-size: xx-large;
+            font-weight: bolder;
+            color: rgb(32, 3, 157);
+            text-align: center;
+        }
+
+        .html {
+            color: rgb(25, 7, 183);
+            font-family: times new roman;
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: center;
+            text-decoration: double;
+            text-decoration-line: underline;
+        }
+
+        .css {
+            color: rgb(4, 84, 31);
+            font-family: times new roman;
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: center;
+            text-decoration: double;
+            text-decoration-line: underline;
+        }
+
+        .js {
+            color: rgb(69, 27, 1);
+            font-family: times new roman;
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: center;
+            text-decoration: double;
+            text-decoration-line: underline;
+        }
+
+        .angular {
+            color: rgb(4, 16, 108);
+            font-family: times new roman;
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: center;
+            text-decoration: double;
+            text-decoration-line: underline;
+        }
+
+        .node {
+            color: rgb(156, 7, 104);
+            font-family: times new roman;
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: center;
+            text-decoration: double;
+            text-decoration-line: underline;
+        }
+
+        .react {
+            color: rgb(7, 137, 237);
+            font-family: times new roman;
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: center;
+            text-decoration: double;
+            text-decoration-line: underline;
+        }
+
+        .php {
+            color: rgb(163, 4, 4);
+            font-family: times new roman;
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: center;
+            text-decoration: double;
+            text-decoration-line: underline;
+        }
+
+        img.two {
+            padding: 10px;
+            width: 120px;
+            height: 120px;
+            margin-left: 15px;
+            opacity: 0.4;
+        }
+
+        img.two:hover {
+            opacity: 4.0;
+            width: 160px;
+            height: 160px;
+        }
+
+        img.three {
+            padding: 10px;
+            width: 120px;
+            height: 120px;
+            margin-left: 15px;
+            opacity: 0.4;
+        }
+
+        img.three:hover {
+            opacity: 4.0;
+            width: 160px;
+            height: 160px;
+        }
+
+        img.four {
+            padding: 10px;
+            width: 120px;
+            height: 120px;
+            margin-left: 15px;
+            opacity: 0.4;
+        }
+
+        img.four:hover {
+            opacity: 4.0;
+            width: 160px;
+            height: 160px;
+        }
+
+        img.five {
+            padding: 10px;
+            width: 120px;
+            height: 120px;
+            margin-left: 15px;
+            opacity: 0.4;
+        }
+
+        img.five:hover {
+            opacity: 4.0;
+            width: 160px;
+            height: 160px;
+        }
+
+        img.six {
+            padding: 10px;
+            width: 120px;
+            height: 120px;
+            margin-left: 15px;
+            opacity: 0.4;
+        }
+
+        img.six:hover {
+            opacity: 4.0;
+            width: 160px;
+            height: 160px;
+        }
+
+        img.seven {
+            padding: 10px;
+            width: 120px;
+            height: 120px;
+            margin-left: 15px;
+            opacity: 0.4;
+        }
+
+        img.seven:hover {
+            opacity: 4.0;
+            width: 160px;
+            height: 160px;
+        }
+
+        img.eight {
+            padding: 10px;
+            width: 120px;
+            height: 120px;
+            margin-left: 15px;
+            opacity: 0.4;
+        }
+
+        img.eight:hover {
+            opacity: 4.0;
+            width: 160px;
+            height: 160px;
+        }
+
+        #para1 {
+            color: black;
+            font-family: verdana;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+
+        #para2 {
+            color: black;
+            font-family: verdana;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+
+        #para3 {
+            color: black;
+            font-family: verdana;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+
+        #para4 {
+            color: black;
+            font-family: verdana;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+
+        #para5 {
+            color: black;
+            font-family: verdana;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+
+        #para6 {
+            color: black;
+            font-family: verdana;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+
+        #para7 {
+            color: black;
+            font-family: verdana;
+            font-size: x-large;
+            font-weight: bolder;
         }
 
         aside {
             margin-top: 100px;
-            margin-left: 50px;
+            margin-left: 15px;
             float: left;
             padding: 10px;
-            max-width: 15%;
+            max-width: 20%;
             height: inherit;
+        }
+
+        #ref {
+            color: black;
+            font-size: xx-large;
+            font-family: britannic;
+            font-weight: bolder;
+        }
+
+        body {
+            background: #1E9600;
+            background: -webkit-linear-gradient(to right, #FF0000, #FFF200, #1E9600);
+            background: linear-gradient(to right, #FF0000, #FFF200, #1E9600);
+
         }
     </style>
 </head>
@@ -78,12 +345,11 @@
 <body>
     <div class="container">
         <header>
-            <img class="one" src="assets\wl logo.png" alt="logo" height="100" width="400" style="float: left;">
+            <img class="one" src="assets\wl logo.png" alt="logo" height="120" width="400" style="float: left;">
             <ul class="horizon">
-                <li>Contact</li>
-                <li>Sign UP</li>
-                <li>Profile</li>
-                <li>Login / Logout</li>
+                <li><a href="https://wildlearner.com/" target="_blank">Home</a></li>
+                <li><a href="https://www.crunchbase.com/organization/wildlearner" target="_blank">About</a></li>
+                <li><a href="https://wildlearner.com/contact/" target="_blank">Contact</a></li>
             </ul>
         </header>
         <nav>
@@ -100,7 +366,9 @@
         </nav>
         <article>
             <h1>ARTICLE</h1><br>
-            <img class="two" src="assets\b1.png" alt="HTML5" height="100px" width="100px" style="float: left;">
+            <hr>
+            <h2 class="html">HTML</h2>
+            <img class="two" src="assets\b1.png" alt="HTML5" height="150px" width="150px" style="float: left;">
             <p id="para1">
                 The HyperText Markup Language or HTML is the standard markup language for documents designed to be
                 displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and
@@ -117,7 +385,8 @@
                 Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has
                 encouraged the use of CSS over explicit presentational HTML since 1997.<br>
             </p><br><br>
-            <img class="three" src="assets\b2.png" alt="CSS3" height="100px" width="100px" style="float: left;">
+            <h2 class="css">CSS</h2>
+            <img class="three" src="assets\b2.png" alt="CSS3" height="150px" width="150px" style="float: right;">
             <p id="para2">
                 Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a
                 document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or
@@ -135,7 +404,8 @@
                 The name cascading comes from the specified priority scheme to determine which style rule applies if
                 more than one rule matches a particular element. This cascading priority scheme is predictable.
             </p><br><br>
-            <img class="four" src="assets\b3.png" alt="JAVASCRIPT" height="100px" width="100px" style="float: left;">
+            <h2 class="js">JAVASCRIPT</h2>
+            <img class="four" src="assets\b3.png" alt="JAVASCRIPT" height="150px" width="150px" style="float: left;">
             <p id="para3">
                 JavaScript often abbreviated as JS, is a programming language that is one of the core technologies of
                 the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client
@@ -152,7 +422,8 @@
                 JavaScript engines were originally used only in web browsers, but are now core components of some
                 servers and a variety of applications. The most popular runtime system for this usage is Node.js.
             </p><br><br>
-            <img class="five" src="assets\b4.png" alt="Angular JS" height="100px" width="100px" style="float: left;">
+            <h2 class="angular">ANGULAR JS</h2>
+            <img class="five" src="assets\b4.png" alt="Angular JS" height="150px" width="150px" style="float: right;">
             <p id="para4">
                 AngularJS is a discontinued free and open-source JavaScript-based web framework for developing
                 single-page applications. It was maintained mainly by Google and a community of individuals and
@@ -166,7 +437,8 @@
                 jQuery issues.[3][4][5] The Angular team recommends upgrading to Angular (v2+) as the best path forward,
                 but they also provided some other options.[6]
             </p><br><br>
-            <img class="six" src="assets\b5.png" alt="Node JS" height="100px" width="100px" style="float: left;">
+            <h2 class="node">NODE JS</h2>
+            <img class="six" src="assets\b5.png" alt="Node JS" height="150px" width="150px" style="float: left;">
             <p id="para5">
                 Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS,
                 and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript Engine, and
@@ -183,7 +455,8 @@
                 has now merged with the JS Foundation to form the OpenJS Foundation. OpenJS Foundation is facilitated by
                 the Linux Foundation's Collaborative Projects program.
             </p><br><br>
-            <img class="seven" src="assets\b6.png" alt="React JS" height="100px" width="100px" style="float: left;">
+            <h2 class="react">REACT JS</h2>
+            <img class="seven" src="assets\b6.png" alt="React JS" height="150px" width="150px" style="float: right;">
             <p id="para6">
                 React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library[3] for
                 building user interfaces based on components. It is maintained by Meta (formerly Facebook) and a
@@ -193,7 +466,8 @@
                 components to the DOM, so creating React applications usually requires the use of additional libraries
                 for routing, as well as certain client-side functionality.
             </p><br><br>
-            <img class="eight" src="assets\b7.png" alt="React JS" height="100px" width="100px" style="float: left;">
+            <h2 class="php">PHP</h2>
+            <img class="eight" src="assets\b7.png" alt="PHP" height="150px" width="150px" style="float: left;">
             <p id="para7">
                 PHP is a general-purpose scripting language geared toward web development. It was originally created
                 by Danish-Canadian programmer Rasmus Lerdorf in 1993 and released in 1995.The PHP reference
@@ -218,25 +492,43 @@
         <aside>
             <h1>Video refrences</h1>
             <hr>
-            <hr>
+            <hr><br>
             <iframe width="450" height="600" src="https://www.youtube.com/embed/HD13eq_Pmp8"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <hr>
-            <hr>
+            <hr><br>
             <iframe width="450" height="600" src="https://www.youtube.com/embed/Qhaz36TZG5Y"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <hr>
-            <hr>
+            <hr><br>
             <iframe width="450" height="600" src="https://www.youtube.com/embed/OuUqS8Po5ps"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <hr>
+            <hr><br>
+            <iframe width="450" height="600" src="https://www.youtube.com/embed/-7iOLMN5Wng"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
             <hr>
+            <hr><br>
+            <iframe width="450" height="600" src="https://www.youtube.com/embed/yEHCfRWz-EI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <hr>
+            <hr><br>
+            <iframe width="450" height="600" src="https://www.youtube.com/embed/Y6aYx_KKM7A"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <hr>
+            <hr><br>
             <iframe width="450" height="600" src="https://www.youtube.com/embed/wQ4S7opkIWk"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
