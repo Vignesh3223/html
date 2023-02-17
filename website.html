@@ -62,7 +62,7 @@
 
         nav {
             float: left;
-            max-width: 10%;
+            max-width: 15%;
             height: inherit;
             padding: 10px;
         }
@@ -82,8 +82,7 @@
             float: left;
             margin-left: 20px;
             padding: 10px;
-            max-width: 70%;
-            height: inherit;
+            max-width: 70% height: inherit;
         }
 
         h1 {
@@ -93,36 +92,6 @@
             text-align: left;
         }
 
-        aside {
-            margin-top: 100px;
-            margin-left: 10px;
-            float: left;
-            padding: 10px;
-            max-width: 20%;
-            height: inherit;
-        }
-
-        #para1 {
-            color: firebrick;
-            font-size: large;
-            font-family: times new roman;
-            font-weight: bold;
-        }
-
-        #para2 {
-            color: black;
-            font-size: large;
-            font-family: times new roman;
-            font-weight: bold;
-        }
-
-        #para3 {
-            color: deeppink;
-            font-size: large;
-            font-family: times new roman;
-            font-weight: bold;
-        }
-
         h2 {
             color: navy;
             font-size: larger;
@@ -130,37 +99,67 @@
             text-align: left;
         }
 
+        aside {
+            margin-top: 100px;
+            margin-left: 20px;
+            float: right;
+            padding: 10px;
+            max-width: 15%;
+            height: inherit;
+        }
+
+        #para1 {
+            color: firebrick;
+            font-size: larger;
+            font-family: times new roman;
+            font-weight: bold;
+        }
+
+        #para2 {
+            color: black;
+            font-size: larger;
+            font-family: times new roman;
+            font-weight: bold;
+        }
+
+        #para3 {
+            color: deeppink;
+            font-size: larger;
+            font-family: times new roman;
+            font-weight: bold;
+        }
+
         #para4 {
             color: blueviolet;
-            font-size: large;
+            font-size: larger;
             font-family: times new roman;
             font-weight: bold;
         }
 
         #para5 {
             color: darkgreen;
-            font-size: large;
+            font-size: larger;
             font-family: times new roman;
             font-weight: bold;
         }
 
         #para6 {
             color: darkslategrey;
-            font-size: large;
+            font-size: larger;
             font-family: times new roman;
             font-weight: bold;
         }
 
         #para7 {
             color: darkmagenta;
-            font-size: large;
+            font-size: larger;
             font-family: times new roman;
             font-weight: bold;
         }
 
         ul {
             color: red;
-            font-size: large;
+            font-size: larger;
             font-family: times new roman;
             list-style-type: circle;
             font-weight: bold;
@@ -198,10 +197,11 @@
         a:active {
             color: burlywood;
             background-color: lightgreen;
+        }
 
-            body {
-                background-color: antiquewhite;
-            }
+        body {
+            background-color: antiquewhite;
+        }
     </style>
 </head>
 
@@ -258,18 +258,26 @@
             </ul>
             </p><br><br>
             <h1>SELECTORS</h1>
+
+            <h2><a href="#para3.1">Element Selector</a></h2>
+            <h2><a href="#para3.2">Id Selector</a></h2>
+            <h2><a href="#para3.3">Class Selector</a></h2>
+            <h2><a href="#para3.4">Universal Selector</a></h2>
+            <h2><a href="#para3.5">Grouping Selector</a></h2>
             <p id="para3">
-            <h2>Element Selector</h2>
-            The element selector selects HTML elements based on the element name.<br><br>
-            <h2>Id Selector</h2>
-            The id selector uses the id attribute of an HTML element to select a specific element.<br><br>
-            <h2>Class Selector</h2>
-            The class selector selects HTML elements with a specific class attribute.<br>
-            To select elements with a specific class, write a period (.) character, followed by the class name.<br><br>
-            <h2>Universal Selector</h2>
-            The universal selector (*) selects all HTML elements on the page.<br><br>
-            <h2>Grouping Selector</h2>
-            The grouping selector selects all the HTML elements with the same style definitions.<br><br>
+            <p id="para3.1">The element selector selects HTML elements based on the element name.</p><br><br>
+
+            <p id="para3.2">The id selector uses the id attribute of an HTML element to select a specific element.</p>
+            <br><br>
+
+            <p id="para3.3"> The class selector selects HTML elements with a specific class attribute.<br>
+                To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+            <br><br>
+
+            <p id="para3.4"></p>The universal selector (*) selects all HTML elements on the page.</p><br><br>
+
+            <p id="para3.5"> The grouping selector selects all the HTML elements with the same style
+                definitions.<br><br>
             </p><br><br>
             <h1>BORDERS</h1>
             <img src="assets\css3.jpg" alt="CSS3" height="200px" width="400px" style="float:right;">
