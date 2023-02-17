@@ -12,7 +12,7 @@
         div.container {
             display: inline-block;
             width: 100%;
-            height: 5000px;
+            height: 4500px;
 
         }
 
@@ -86,6 +86,7 @@
 
         article {
             float: left;
+            margin-top: 50px;
             margin-left: 20px;
             padding: 10px;
             max-width: 65%;
@@ -121,7 +122,7 @@
         }
 
         .js {
-            color: rgb(69, 27, 1);
+            color: rgb(210, 9, 196);
             font-family: times new roman;
             font-size: xx-large;
             font-weight: bolder;
@@ -318,12 +319,90 @@
         }
 
         aside {
-            margin-top: 100px;
+            margin-top: 150px;
             margin-left: 15px;
             float: left;
             padding: 10px;
             max-width: 20%;
             height: inherit;
+        }
+
+        table {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: britannic;
+            font-size: larger;
+            font-weight: bolder;
+            margin-bottom: 50%;
+            height: 300px;
+        }
+
+        caption {
+            color: rgb(248, 6, 248);
+            font-family: times new roman;
+            font-size: x-large;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        caption:hover {
+            color: rgb(190, 239, 10);
+            background-color: rgb(172, 4, 88);
+            font-family: algerian;
+            font-size: xx-large;
+            font-weight: bolder;
+            font-style: italic;
+        }
+
+        th {
+            color: rgb(6, 9, 12);
+            margin-top: 25px;
+            font-size: x-large;
+            font-family: britannic;
+            background-color: rgb(13, 137, 96);
+        }
+
+        th:hover {
+            color: rgb(246, 107, 9);
+            background-color: rgb(84, 172, 248);
+            font-family: algerian;
+            font-size: xx-large;
+            font-style: italic;
+        }
+
+        tr:nth-child(odd) {
+            font-family: times new roman;
+            font-size: x-large;
+            font-weight: bold;
+            background-color: rgb(16, 239, 165);
+            color: rgb(25, 4, 132);
+            text-align: center;
+        }
+
+        tr:nth-child(odd):hover {
+            color: rgb(3, 96, 9);
+            background-color: rgb(231, 14, 217);
+            font-family: algerian;
+            font-size: xx-large;
+            font-style: italic;
+        }
+
+        tr:nth-child(even) {
+            font-family: verdana;
+            font-size: x-large;
+            font-weight: bold;
+            background-color: rgb(235, 40, 138);
+            color: rgb(87, 3, 3);
+            text-align: center;
+        }
+
+        tr:nth-child(even):hover {
+            color: rgb(219, 252, 7);
+            background-color: rgb(53, 122, 156);
+            font-family: algerian;
+            font-size: xx-large;
+            font-style: italic;
         }
 
         #ref {
@@ -354,6 +433,7 @@
         </header>
         <nav>
             <h1>Contents</h1>
+            <hr>
             <ul>
                 <li><a href="#para1">HTML</a></li>
                 <li><a href="#para2">CSS</a></li>
@@ -412,7 +492,7 @@
                 side for webpage behavior, often incorporating third-party libraries. All major web browsers have a
                 dedicated JavaScript engine to execute the code on users' devices.<br>
                 JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript
-                standard.[10] It has dynamic typing, prototype-based object-orientation, and first-class functions. It
+                standard. It has dynamic typing, prototype-based object-orientation, and first-class functions. It
                 is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has
                 application programming interfaces (APIs) for working with text, dates, regular expressions, standard
                 data structures, and the Document Object Model (DOM).<br>
@@ -434,8 +514,8 @@
                 AngularJS was used as the frontend of the MEAN stack, that consisted of MongoDB database, Express.js web
                 application server framework, AngularJS itself (or Angular), and Node.js server runtime environment.<br>
                 As of January 1, 2022, Google no longer updates AngularJS to fix security, browser compatibility, or
-                jQuery issues.[3][4][5] The Angular team recommends upgrading to Angular (v2+) as the best path forward,
-                but they also provided some other options.[6]
+                jQuery issues. The Angular team recommends upgrading to Angular (v2+) as the best path forward,
+                but they also provided some other options.
             </p><br><br>
             <h2 class="node">NODE JS</h2>
             <img class="six" src="assets\b5.png" alt="Node JS" height="150px" width="150px" style="float: left;">
@@ -465,13 +545,19 @@
                 with frameworks like Next.js. However, React is only concerned with the user interface and rendering
                 components to the DOM, so creating React applications usually requires the use of additional libraries
                 for routing, as well as certain client-side functionality.
+                React does not attempt to provide a complete "application library". It is designed specifically for
+                building user interfaces and therefore does not include many of the tools some developers might
+                consider necessary to build an application.<br>
+                This allows the choice of whichever libraries the developer
+                prefers to accomplish tasks such as performing network access or local data storage. Common patterns of
+                usage have emerged as the library matures.
             </p><br><br>
             <h2 class="php">PHP</h2>
             <img class="eight" src="assets\b7.png" alt="PHP" height="150px" width="150px" style="float: left;">
             <p id="para7">
                 PHP is a general-purpose scripting language geared toward web development. It was originally created
                 by Danish-Canadian programmer Rasmus Lerdorf in 1993 and released in 1995.The PHP reference
-                implementation is now produced by The PHP Group.[10] PHP was originally an abbreviation of Personal Home
+                implementation is now produced by The PHP Group. PHP was originally an abbreviation of Personal Home
                 Page, but it now stands for the recursive initialism PHP: Hypertext Preprocessor.<br>
                 PHP code is usually processed on a web server by a PHP interpreter implemented as a module, a daemon or
                 as a Common Gateway Interface (CGI) executable. On a web server, the result of the interpreted and
@@ -493,49 +579,104 @@
             <h1>Video refrences</h1>
             <hr>
             <hr><br>
-            <iframe width="450" height="600" src="https://www.youtube.com/embed/HD13eq_Pmp8"
+            <iframe width="450" height="500" src="https://www.youtube.com/embed/HD13eq_Pmp8"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <hr>
             <hr><br>
-            <iframe width="450" height="600" src="https://www.youtube.com/embed/Qhaz36TZG5Y"
+            <iframe width="450" height="500" src="https://www.youtube.com/embed/Qhaz36TZG5Y"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <hr>
             <hr><br>
-            <iframe width="450" height="600" src="https://www.youtube.com/embed/OuUqS8Po5ps"
+            <iframe width="450" height="500" src="https://www.youtube.com/embed/OuUqS8Po5ps"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <hr>
             <hr><br>
-            <iframe width="450" height="600" src="https://www.youtube.com/embed/-7iOLMN5Wng"
+            <iframe width="450" height="500" src="https://www.youtube.com/embed/-7iOLMN5Wng"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <hr>
             <hr><br>
-            <iframe width="450" height="600" src="https://www.youtube.com/embed/yEHCfRWz-EI"
+            <iframe width="450" height="500" src="https://www.youtube.com/embed/yEHCfRWz-EI"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <hr>
             <hr><br>
-            <iframe width="450" height="600" src="https://www.youtube.com/embed/Y6aYx_KKM7A"
+            <iframe width="450" height="500" src="https://www.youtube.com/embed/Y6aYx_KKM7A"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <hr>
             <hr><br>
-            <iframe width="450" height="600" src="https://www.youtube.com/embed/wQ4S7opkIWk"
+            <iframe width="450" height="500" src="https://www.youtube.com/embed/wQ4S7opkIWk"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             <hr>
-            <hr>
+            <hr><br>
         </aside>
+        <table border=" 1 ">
+            <caption>Certified Trainers</caption>
+            <thead>
+                <tr>
+                    <th>S.no</th>
+                    <th colspan="2">Name</th>
+                    <th>Course</th>
+                    <th>E-mail ID</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ankit</td>
+                    <td>Mishra</td>
+                    <td>PHP , CSS</td>
+                    <td>ankitmishra21@gmailcom</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ashish</td>
+                    <td>Mehra</td>
+                    <td>CSS , Javascript</td>
+                    <td>ashishmehra@gmailcom</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Pooja</td>
+                    <td>Tiwari</td>
+                    <td>Node JS , HTML</td>
+                    <td>pooja5607@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Karan</td>
+                    <td>Kumar</td>
+                    <td>HTML , CSS , Angular JS</td>
+                    <td>karankumarkk@gmailcom</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Zareena</td>
+                    <td>Ahmed</td>
+                    <td>React JS , Angular JS , Javascript</td>
+                    <td>zareenaahmed23@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
         <footer>
             <p id="ref">Study Easy @ WildLearner.com</p>
         </footer>
