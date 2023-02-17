@@ -13,7 +13,7 @@
         div.details {
             display: inline-block;
             width: 100%;
-            height: 3000px;
+            height: 3500px;
         }
 
         #wc {
@@ -123,6 +123,13 @@
             font-weight: bold;
         }
 
+        h2 {
+            color: navy;
+            font-size: larger;
+            font-family: Algerian;
+            text-align: left;
+        }
+
         #para4 {
             color: blueviolet;
             font-size: large;
@@ -173,9 +180,28 @@
             height: 200px;
         }
 
-        body {
-            background-color: antiquewhite;
+        a:link {
+            color: red;
+            text-decoration: none;
         }
+
+        a:visited {
+            color: green;
+        }
+
+
+        a:hover {
+            color: palevioletred;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: burlywood;
+            background-color: lightgreen;
+
+            body {
+                background-color: antiquewhite;
+            }
     </style>
 </head>
 
@@ -233,13 +259,17 @@
             </p><br><br>
             <h1>SELECTORS</h1>
             <p id="para3">
-                The element selector selects HTML elements based on the element name.<br><br>
-                The id selector uses the id attribute of an HTML element to select a specific element.<br><br>
-                The class selector selects HTML elements with a specific class attribute.To select elements with a
-                specific
-                class, write a period (.) character, followed by the class name.<br><br>
-                The universal selector (*) selects all HTML elements on the page.<br><br>
-                The grouping selector selects all the HTML elements with the same style definitions.<br><br>
+            <h2>Element Selector</h2>
+            The element selector selects HTML elements based on the element name.<br><br>
+            <h2>Id Selector</h2>
+            The id selector uses the id attribute of an HTML element to select a specific element.<br><br>
+            <h2>Class Selector</h2>
+            The class selector selects HTML elements with a specific class attribute.<br>
+            To select elements with a specific class, write a period (.) character, followed by the class name.<br><br>
+            <h2>Universal Selector</h2>
+            The universal selector (*) selects all HTML elements on the page.<br><br>
+            <h2>Grouping Selector</h2>
+            The grouping selector selects all the HTML elements with the same style definitions.<br><br>
             </p><br><br>
             <h1>BORDERS</h1>
             <img src="assets\css3.jpg" alt="CSS3" height="200px" width="400px" style="float:right;">
