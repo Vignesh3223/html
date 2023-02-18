@@ -31,6 +31,7 @@
         }
 
         .horizon li {
+            position: static;
             display: inline-block;
             color: rgb(8, 22, 177);
             font-family: algerian;
@@ -46,10 +47,11 @@
         }
 
         nav {
+            margin-top: 10%;
             margin-left: 0%;
             float: left;
             max-width: 15%;
-            height: 500px;
+            height: inherit;
             padding: 10px;
         }
 
@@ -58,24 +60,37 @@
             padding: 20px;
             font-size: xx-large;
             font-family: algerian;
-            color: rgb(12, 189, 237);
+            color: rgb(237, 12, 12);
         }
 
         nav ul a {
             text-decoration: solid;
         }
 
+        .data {
+            color: rgb(245, 15, 15);
+            font-size: 1200%;
+            float: left;
+            text-align: center;
+            font-weight: bolder;
+            font-family: algerian;
+            font-style: italic;
+            margin-left: 5px;
+            text-shadow: 3px 2px 1px rgb(10, 226, 46), 4px 3px 2px rgb(243, 10, 193);
+
+        }
+
         a:link {
-            color: rgb(4, 68, 95);
+            color: rgb(243, 116, 12);
             text-decoration: none;
         }
 
         a:visited {
-            color: black;
+            color: rgb(14, 1, 1);
         }
 
         a:hover {
-            color: rgb(196, 234, 11);
+            color: rgb(8, 65, 1);
             text-decoration: underline;
         }
 
@@ -99,13 +114,16 @@
             font-weight: bolder;
             color: rgb(32, 3, 157);
             text-align: center;
+            text-shadow: 3px 2px 1px rgb(10, 223, 238), 4px 3px 2px rgb(243, 10, 193);
         }
 
         .html {
+
             color: rgb(25, 7, 183);
             font-family: times new roman;
             font-size: xx-large;
             font-weight: bolder;
+            font-style: oblique;
             text-align: center;
             text-decoration: double;
             text-decoration-line: underline;
@@ -116,6 +134,7 @@
             font-family: times new roman;
             font-size: xx-large;
             font-weight: bolder;
+            font-style: oblique;
             text-align: center;
             text-decoration: double;
             text-decoration-line: underline;
@@ -126,6 +145,7 @@
             font-family: times new roman;
             font-size: xx-large;
             font-weight: bolder;
+            font-style: oblique;
             text-align: center;
             text-decoration: double;
             text-decoration-line: underline;
@@ -136,6 +156,7 @@
             font-family: times new roman;
             font-size: xx-large;
             font-weight: bolder;
+            font-style: oblique;
             text-align: center;
             text-decoration: double;
             text-decoration-line: underline;
@@ -146,6 +167,7 @@
             font-family: times new roman;
             font-size: xx-large;
             font-weight: bolder;
+            font-style: oblique;
             text-align: center;
             text-decoration: double;
             text-decoration-line: underline;
@@ -156,6 +178,7 @@
             font-family: times new roman;
             font-size: xx-large;
             font-weight: bolder;
+            font-style: oblique;
             text-align: center;
             text-decoration: double;
             text-decoration-line: underline;
@@ -166,6 +189,7 @@
             font-family: times new roman;
             font-size: xx-large;
             font-weight: bolder;
+            font-style: oblique;
             text-align: center;
             text-decoration: double;
             text-decoration-line: underline;
@@ -274,6 +298,7 @@
             font-family: verdana;
             font-size: x-large;
             font-weight: bolder;
+            font-style: oblique;
         }
 
         #para2 {
@@ -281,6 +306,7 @@
             font-family: verdana;
             font-size: x-large;
             font-weight: bolder;
+            font-style: oblique;
         }
 
         #para3 {
@@ -288,6 +314,7 @@
             font-family: verdana;
             font-size: x-large;
             font-weight: bolder;
+            font-style: oblique;
         }
 
         #para4 {
@@ -295,6 +322,7 @@
             font-family: verdana;
             font-size: x-large;
             font-weight: bolder;
+            font-style: oblique;
         }
 
         #para5 {
@@ -302,6 +330,7 @@
             font-family: verdana;
             font-size: x-large;
             font-weight: bolder;
+            font-style: oblique;
         }
 
         #para6 {
@@ -309,6 +338,7 @@
             font-family: verdana;
             font-size: x-large;
             font-weight: bolder;
+            font-style: oblique;
         }
 
         #para7 {
@@ -316,6 +346,7 @@
             font-family: verdana;
             font-size: x-large;
             font-weight: bolder;
+            font-style: oblique;
         }
 
         aside {
@@ -329,13 +360,15 @@
 
         table {
             width: 80%;
-            margin-left: auto;
-            margin-right: auto;
+            margin-left: 10%;
+            margin-right: 10%;
             font-family: britannic;
             font-size: larger;
             font-weight: bolder;
             margin-bottom: 50%;
             height: 300px;
+            box-shadow: 5px 10px 5px rgb(7, 238, 7), 10px 15px 10px rgb(102, 26, 2);
+            border-radius: 10px;
         }
 
         caption {
@@ -413,9 +446,9 @@
         }
 
         body {
-            background: #1E9600;
-            background: -webkit-linear-gradient(to right, #FF0000, #FFF200, #1E9600);
-            background: linear-gradient(to right, #FF0000, #FFF200, #1E9600);
+            background: #ef32d9;
+            background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);
+            background: linear-gradient(to right, #89fffd, #ef32d9);
 
         }
     </style>
@@ -443,6 +476,7 @@
                 <li><a href="#para6">React JS</a></li>
                 <li><a href="#para7">PHP</a></li>
             </ul>
+            <p class="data">S<br>T<br>A<br>R<br>T<br><br>D<br>E<br>S<br>I<br>G<br>N<br>I<br>N<br>G</p>
         </nav>
         <article>
             <h1>ARTICLE</h1><br>
@@ -576,7 +610,7 @@
             </p><br><br>
         </article>
         <aside>
-            <h1>Video refrences</h1>
+            <h1>Video references</h1>
             <hr>
             <hr><br>
             <iframe width="450" height="500" src="https://www.youtube.com/embed/HD13eq_Pmp8"
