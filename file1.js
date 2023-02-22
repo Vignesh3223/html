@@ -10,7 +10,7 @@ function perfect() {
         document.write("The given number is a Perfect number");
     }
     else {
-        document.write("The given number is not  a Perfect number");
+        document.write("The given number is not a Perfect number");
     }
 };
 function factorial() {
