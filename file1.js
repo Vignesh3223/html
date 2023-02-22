@@ -12,7 +12,7 @@ function perfect() {
     else {
         document.write("The given number is not a Perfect number");
     }
-};
+}
 function factorial() {
     var a = document.getElementById("input2").value;
     var i = 1;
