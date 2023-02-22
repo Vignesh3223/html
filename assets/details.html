@@ -14,32 +14,44 @@
     <p id="demo3"></p>
     <p id="demo4"></p>
     <script>
+        const p = {
+            firstName: "Vignesh",
+            lastName: "R",
+            eyeColor: "black"
+        };
         let DOB = "27-Sep-2002";
         let Gender = "Male";
         let Blood_group = "A1+ve";
         var FrName = "Ramasamy";
-        var Address = "259A1" + "Dr.Radhakrishnan" + "Street" + "Seeranaickenpalayam" + "Coimbatore" + "-" + "641007";
+        var Address = "259A1" + " , " + "Dr.Radhakrishnan" + "Street" + " , " + "Seeranaickenpalayam" + " , " + "Coimbatore" + "-" + "641007" + " . ";
         var Qualification = "BCA" + "(pursuing)";
         var Job = "Software" + "Trainee" + "@" + "CGVAK";
         var email = "viketvicky@gmail.com";
         var contact = "9360565312";
-        const p = {
-            firstName: "Vignesh",
-            lastName: "R",
-            age: 20,
-            eyeColor: "black"
-        };
-
     </script>
 </head>
 
 <body>
     <script>
-        document.getElementById("demo1").innerhtml = " <b> Name " + " : </b> " + p.firstname;
-        document.getElementById("demo2").innerHTML = " <b><center> DOB " + " : </b> " + DOB;"</center>"
+        document.getElementById("demo1").innerHTML = " <b> Name " + " : </b> " + p.firstName + "  " + p.lastName;
+        document.getElementById("demo2").innerHTML = " <b> DOB " + " : </b> " + DOB;
         document.getElementById("demo3").innerHTML = " <b> Gender " + " : </b> " + Gender;
         document.getElementById("demo4").innerHTML = " <b> Blood group " + " : </b> " + Blood_group;
+        document.write(" <b> Father Name " + " : </b> " + FrName);
+        document.write("<br><br>");
+        document.write(" <b> Address " + " : </b> " + Address);
+        document.write("<br><br>");
+        document.write(" <b> Email ID " + " : </b> " + email);
+        document.write("<br><br>");
+        document.write(" <b> Phone Number " + " : </b> " + contact);
+        document.write("<br><br>");
+        document.write(" <b> Qualification " + " : </b>" + Qualification);
+        document.write("<br><br>");
+        document.write(" <b> Job " + " : </b> " + Job);
+        document.write("<br><br>");
+
     </script>
+    <hr>
 
 </body>
 
