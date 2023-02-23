@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Design</title>
+    <script type="text/javascript">
+        function registration() {
+            var Name = document.form1.tname.value;
+            var Email = document.form1.email.value;
+            var Password = document.form1.password.value;
+            var Gender = document.form1.gender.value;
+            var Address = documentform1.addr.value;
+            var DOB = document.form1.date.value;
+            var Profession = document.form1.profession.value;
+            var Mobile = document.form1.mob.value;
+            var Telephone = document.form1.tel.value;
+            if(Name=""){
+                alert("Please enter your name");
+            }
+            else if(Email=""){
+                alert("Please enter a valid email");
+            }
+            else if (Password.length > 6){
+                alert("Invalid password");"<br>"
+                alert("Please enter a valid password");
+            }
+            window.alert("Thank you for registering!!!")
+        window.location = "https://www.cgvakindia.com/";
+        }
+      
+    </script>
     <style>
         form {
             font-size: large;
@@ -20,6 +47,7 @@
             border-color: rgb(12, 130, 226);
             border-width: 5px;
         }
+
         body {
             background-color: bisque;
             border-style: dashed;
@@ -32,9 +60,10 @@
         }
     </style>
 </head>
+
 <body>
     <h1 style="font-family: 'Times New Roman';text-align: center;">REGISTRATION FORM</h1>
-    <form action="https://www.cgvakindia.com/" method="post">
+    <form name="form1" method="post" action="" onsubmit="return registration()">
         <fieldset>
             <legend>
                 Trainee Registration
@@ -44,15 +73,15 @@
             <label>Trainee Email</label><br>
             <input type="email" name="email" placeholder="Email" required><br><br>
             <label>Password</label><br>
-            <input type="password" name="password" placeholder="xxxxxxxx" required><br>
+            <input type="password" name="password"  placeholder="xxxxxxxx" required><br>
             <input type="checkbox" value="remember-pass"><label>Remember Password</label><br><br>
             <label>Gender</label><br>
-            <input type="radio" id="gender" name="gender" value="Female">Female<br>
-            <input type="radio" id="gender" name="gender" value="Male">Male<br><br>
+            <input type="radio" name="gender" value="Female">Female<br>
+            <input type="radio" name="gender" value="Male">Male<br><br>
             <label>Address</label><br>
-            <textarea></textarea><br><br>
+            <textarea  name="addr"></textarea><br><br>
             <label>DOB</label><br>
-            <input type="date"><br><br>
+            <input type="date" name="date" ><br><br>
             <label>Choose Profession</label><br>
             <select name="profession">
                 <optgroup label="Developer">
@@ -66,12 +95,13 @@
                 </optgroup>
             </select><br><br>
             <label>Mobile Number</label><br>
-            <input type="tel" pattern="[0-9]{10}" required><br><br>
+            <input type="tel" pattern="[0-9]{10}" name="mob" required><br><br>
             <label>Telephone Number</label><br>
-            <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" required><br><br>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
+            <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" name="tel" required><br><br>
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
         </fieldset>
     </form>
 </body>
+
 </html>
