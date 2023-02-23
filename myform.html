@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script>
+        function registration() {
+            var form = document.form1.values;
+            alert("Thank you")
+            window.location = "submit.html";
+        }
+    </script>
+</head>
+
+<body>
+    <form name="form1" method="post" action="" onclick="">
+        <h1 style="font-family: 'Times New Roman';text-align: center;">REGISTRATION FORM</h1>
+        <fieldset>
+            <legend>TRAINEE REGISTRATION</legend>
+            Trainee Name : <input type="text" name="tname"><br>
+            Email ID : <input type="email" name="mail"><br>
+            Password : <input type="password" name="passwd"><br>
+            Remember Password : <input type="checkbox" name="rem-pass"><br>
+            Gender : <input type="radio" name="gender" value="Female">Female<br>
+            <input type="radio" name="gender" value="Male">Male<br>
+            Address : <input type="textarea" name="addr"><br>
+            DOB : <input type="date" name="date"><br><br>
+            Profession : <select name="profession">
+                <option></option>
+                <optgroup label="Developer">
+                    <option>Front-end</option>
+                    <option>Back-end</option>
+                    <option>Full-stack</option>
+                </optgroup>
+                <optgroup label="Sales">
+                    <option>Executive</option>
+                    <option>Manager</option>
+                </optgroup>
+            </select><br>
+            Mobile number : <input type="tel" pattern="[0-9]{10}" name="mob"><br>
+            Telephone number : <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" name="tel" required>><br>
+            <input type="submit" value="Register" onclick="registration()">
+            <input type="rest" value="Clear">
+        </fieldset>
+    </form>
+</body>
+
+</html>
