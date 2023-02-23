@@ -6,29 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <script>
-        function registration() {
-            var form = document.form1.values;
-            alert("Thank you")
-            window.location = "submit.html";
-        }
-    </script>
 </head>
 
 <body>
-    <form name="form1" method="post" action="" onclick="">
+    <form name="form1" method="post" action="">
         <h1 style="font-family: 'Times New Roman';text-align: center;">REGISTRATION FORM</h1>
         <fieldset>
             <legend>TRAINEE REGISTRATION</legend>
-            Trainee Name : <input type="text" name="tname"><br>
-            Email ID : <input type="email" name="mail"><br>
-            Password : <input type="password" name="passwd"><br>
-            Remember Password : <input type="checkbox" name="rem-pass"><br>
-            Gender : <input type="radio" name="gender" value="Female">Female<br>
-            <input type="radio" name="gender" value="Male">Male<br>
-            Address : <input type="textarea" name="addr"><br>
-            DOB : <input type="date" name="date"><br><br>
-            Profession : <select name="profession">
+            Trainee Name :<br> <input type="text" name="tname"><br><br>
+            Email ID :<br> <input type="email" name="mail"><br><br>
+            Password :<br> <input type="password" name="passwd"><br><br>
+            Remember Password : <input type="checkbox" name="rem-pass"><br><br>
+            Gender : <br> <input type="radio" name="gender" value="Female">Female<br>
+            <input type="radio" name="gender" value="Male">Male<br><br>
+            Address : <br> <textarea name="addr"></textarea><br><br>
+            DOB : <br> <input type="date" name="date"><br><br>
+            Profession :<br>  <select name="profession">
                 <option></option>
                 <optgroup label="Developer">
                     <option>Front-end</option>
@@ -39,11 +32,11 @@
                     <option>Executive</option>
                     <option>Manager</option>
                 </optgroup>
-            </select><br>
-            Mobile number : <input type="tel" pattern="[0-9]{10}" name="mob"><br>
-            Telephone number : <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" name="tel" required>><br>
+            </select><br><br>
+            Mobile number :<br>  <input type="tel" pattern="[0-9]{10}" name="mob"><br><br>
+            Telephone number :<br>  <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" name="tele" required><br><br>
             <input type="submit" value="Register" onclick="registration()">
-            <input type="rest" value="Clear">
+            <input type="reset" value="Clear">
         </fieldset>
     </form>
 </body>
