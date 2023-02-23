@@ -2,7 +2,6 @@ function registration() {
     alert("Registerd Succesfully ! Thank You")
     var name = document.form1.tname.value;
     var email = document.form1.mail.value;
-    var password = document.form1.passwd.value;
     var gender = document.form1.gender.value;
     var address = document.form1.addr.value;
     var dob = document.form1.date.value;
@@ -12,7 +11,6 @@ function registration() {
 
     document.write(name + "<br>");
     document.write(email + "<br>");
-    document.write(password + "<br>");
     document.write(gender + "<br>");
     document.write(address + "<br>");
     document.write(dob + "<br>");
