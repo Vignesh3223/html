@@ -9,12 +9,21 @@ function registration() {
     var mobile = document.form1.mob.value;
     var telephone = document.form1.tele.value;
 
-    document.write(name + "<br>");
-    document.write(email + "<br>");
-    document.write(gender + "<br>");
-    document.write(address + "<br>");
-    document.write(dob + "<br>");
-    document.write(profession + "<br>");
-    document.write(mobile + "<br>");
-    document.write(telephone + "<br>");
+    document.write("<h1><center>Trainee details</center></h1>")
+    document.write(" <b> Name " + " : </b>" + name);
+    document.write("<br><br>");
+    document.write(" <b> Email ID " + " : </b>" + email);
+    document.write("<br><br>");
+    document.write(" <b> Gender " + " : </b>" + gender);
+    document.write("<br><br>");
+    document.write(" <b> Address " + " : </b>" + address);
+    document.write("<br><br>");
+    document.write(" <b> D.O.B" + " : </b>" + dob);
+    document.write("<br><br>");
+    document.write(" <b> Profession " + " : </b>" + profession);
+    document.write("<br><br>");
+    document.write(" <b> Mobile number " + " : </b>" + mobile);
+    document.write("<br><br>");
+    document.write(" <b> Telephone number " + " : </b>" + telephone);
+    document.write("<br><br>");
 }

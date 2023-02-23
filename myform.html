@@ -13,34 +13,34 @@
         <h1 style="font-family: 'Times New Roman';text-align: center;">REGISTRATION FORM</h1>
         <fieldset>
             <legend>TRAINEE REGISTRATION</legend>
-            Trainee Name :<br> <input type="text" name="tname"><br><br>
-            Email ID :<br> <input type="email" name="mail"><br><br>
-            Password :<br> <input type="password" name="passwd"><br><br>
-            Remember Password : <input type="checkbox" name="rem-pass"><br><br>
+            Trainee Name :<br> <input type="text" name="tname" required><br><br>
+            Email ID :<br> <input type="email" name="mail" required><br><br>
+            Password :<br> <input type="password" name="passwd" required><br><br>
+            <input type="checkbox" name="rem-pass" required>Remember Password<br><br>
             Gender : <br> <input type="radio" name="gender" value="Female">Female<br>
             <input type="radio" name="gender" value="Male">Male<br><br>
             Address : <br> <textarea name="addr"></textarea><br><br>
             DOB : <br> <input type="date" name="date"><br><br>
-            Profession :<br>  <select name="profession">
+            Profession :<br> <select name="profession">
                 <option></option>
                 <optgroup label="Developer">
-                    <option>Front-end</option>
-                    <option>Back-end</option>
-                    <option>Full-stack</option>
+                    <option>Front-end Developer</option>
+                    <option>Back-end Developer</option>
+                    <option>Full-stack Developer</option>
                 </optgroup>
                 <optgroup label="Sales">
-                    <option>Executive</option>
+                    <option>Sales Executive</option>
                     <option>Manager</option>
                 </optgroup>
             </select><br><br>
-            Mobile number :<br>  <input type="tel" pattern="[0-9]{10}" name="mob"><br><br>
-            Telephone number :<br>  <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" name="tele" ><br><br>
+            Mobile number :<br> <input type="tel" pattern="[0-9]{10}" name="mob" required><br><br>
+            Telephone number :<br> <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" name="tele" required><br><br>
             <input type="submit" value="Register" onclick="registration()">
             <input type="reset" value="Clear">
         </fieldset>
     </form>
     <script src="submit.js">
-        
+
     </script>
 </body>
 
