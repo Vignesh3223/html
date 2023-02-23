@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays</title>
+    <script>
+        var friend = ["Sharan", "Chander", "Srini"];
+        function display() {
+            document.write(friend + "<br>");
+            document.write("Length of array is " + friend.length + "<br>");
+        }
+        function add_beginning() {
+            var front = document.getElementById("frds").values;
+            friend.upshift(+front);
+            document.write(front + "<br>");
+            document.write("Length of array is " + friend.length + "<br>");
+            document.write(friend + "<br>");
+        }
+
+        function delete_beginning() {
+            var first = friend.shift();
+            document.write(first + "<br>");
+            document.write("Length of array is " + friend.length + "<br>");
+            document.write(friend + "<br>");
+        }
+        function delete_end() {
+            var last = friend.pop();
+            document.write(last + "<br>");
+            document.write("Length of array is " + friend.length + "<br>");
+            document.write(friend + "<br>");
+        }
+        function order() {
+            document.write(friend + "<br>");
+            document.write(friend.sort() + "<br>");
+            document.write("Length of array is " + friend.length + "<br>");
+        }
+        function format1() {
+            for (var x = 0; x < friend.length; x++) {
+                document.write(friend[x] + "<br>");
+            }
+            document.write("Length of array is " + friend.length + "<br>");
+
+        }
+        function format3() {
+            for (let f of friend) {
+                document.write(f + "<br>");
+            }
+            document.write("Length of array is " + friend.length + "<br>");
+        }
+        function format4() {
+            for (var i in friend) {
+                document.write("Friend[" + (i) + "] " + friend[i] + "<br>");
+            }
+            document.write("Length of array is " + friend.length + "<br>");
+            function seperate() {
+
+            }
+            function date() {
+                const date = new date();
+                const n = date.toDateString();
+                const time = date.toLocaleTimeString();
+                document.write("Date : " + n);
+                document.write("Time : " + time);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        <center><u>Array Methods</u></center>
+    </h1>
+    <hr>
+    <label>Display Friends names</label><br><br>
+    <button type="button" onclick="display()">Print</button><br><br>
+    <hr>
+    <label>Add Friends names at Beginning</label><br><br>
+    <label>Enter Friends names</label><br>
+    <input type="text" name="frds" id="frds"><br><br>
+    <button type="button" onclick="add_beginning()">Add at beginning</button><br><br>
+    <hr>
+    <label>Add Friends names at End</label><br><br>
+    <label>Enter Friends names</label><br>
+    <input type="text" name="frds" id="frds"><br><br>
+    <button type="button" onclick="">Add at end</button><br><br>
+    <hr>
+    <label>Delete Friends names at Beginning</label><br><br>
+    <button type="button" onclick="delete_beginning()">Delete at beginning</button><br><br>
+    <hr>
+    <label>Delete Friends names at End</label><br><br>
+    <button type="button" onclick="delete_end()">Delete at end</button><br><br>
+    <hr>
+    <label>Sort Friends names</label><br><br>
+    <button type="button" onclick="order()">Sort</button><br><br>
+    <hr>
+    <label>Print Friends names using for loop</label><br><br>
+    <button type="button" onclick="format1()">for</button><br><br>
+    <button type="button" onclick="format2()">foreach</button><br><br>
+    <button type="button" onclick="format3()">for-of</button><br><br>
+    <button type="button" onclick="format4()">for-in</button><br><br>
+    <hr>
+    <label>Seperate Friends names </label><br><br>
+    <button type="button" onclick="seperate()">Seperate</button><br><br>
+    <hr>
+    <label>Print Current Date & Time</label><br><br>
+    <button type="button" onclick="date()">Date & Time</button><br><br>
+    <hr>
+
+</body>
+
+</html>
