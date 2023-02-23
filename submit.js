@@ -1,5 +1,5 @@
 function registration() {
-    alert("Registerd Succesfully ! Thank You")
+    alert("Registered Succesfully ! Thank You")
     var name = document.form1.tname.value;
     var email = document.form1.mail.value;
     var gender = document.form1.gender.value;
