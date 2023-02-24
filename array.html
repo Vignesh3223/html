@@ -84,14 +84,14 @@
         }
         function date() {
             var date = new Date();
+            var time = new Date();
             var day = date.getDate();
             var month = date.getMonth() + 1;
             var year = date.getFullYear();
+            var h = time.getHours();
+            var m = time.getMinutes();
+            var s = time.getSeconds();
             document.write("Date is: " + day + "-" + month + "-" + year + "<br>");
-            var today = new Date();
-            var h = today.getHours();
-            var m = today.getMinutes();
-            var s = today.getSeconds();
             document.write("Time is " + h + ":" + m + ":" + s + "<br>");
 
         }
