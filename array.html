@@ -7,64 +7,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>arrays</title>
     <script>
-        var friend = ["Sharan", "Chander", "Srini"];
+        var friend = ["Sharan", "Chander", "Srini", "Surya", "Bala"];
         function display() {
-            document.write(friend + "<br>");
+            document.write("My Friends : " + friend + "<br>");
             document.write("Length of array is " + friend.length + "<br>");
         }
         function add_beginning() {
-            var front = document.getElementById("frds").values;
-            friend.upshift(+front);
-            document.write(front + "<br>");
+            var front = document.getElementById("frds").value;
+            friend.unshift(front);
+            document.write("Added friend :" + front + "<br>");
+            document.write("My Friends : " + friend + "<br>");
             document.write("Length of array is " + friend.length + "<br>");
-            document.write(friend + "<br>");
+        }
+        function add_end() {
+            var rear = document.getElementById("frd").value;
+            friend.push(rear);
+            document.write("Added friend :" + rear + "<br>");
+            document.write("My Friends : " + friend + "<br>");
+            document.write("Length of array is " + friend.length + "<br>");
         }
 
         function delete_beginning() {
             var first = friend.shift();
-            document.write(first + "<br>");
+            document.write("Deleted friend :" + first + "<br>");
+            document.write("My Friends : " + friend + "<br>");
             document.write("Length of array is " + friend.length + "<br>");
-            document.write(friend + "<br>");
         }
         function delete_end() {
             var last = friend.pop();
-            document.write(last + "<br>");
+            document.write("Deleted friend :" + last + "<br>");
+            document.write("My Friends : " + friend + "<br>");
             document.write("Length of array is " + friend.length + "<br>");
-            document.write(friend + "<br>");
         }
         function order() {
-            document.write(friend + "<br>");
-            document.write(friend.sort() + "<br>");
+            document.write("My Friends : " + friend + "<br>");
+            document.write("Sorted array : " + friend.sort() + "<br>");
             document.write("Length of array is " + friend.length + "<br>");
         }
         function format1() {
+            document.write("My Friends : <br>");
             for (var x = 0; x < friend.length; x++) {
                 document.write(friend[x] + "<br>");
             }
             document.write("Length of array is " + friend.length + "<br>");
+        }
+        function format2() {
+            let text = "<ol>";
+            friend.forEach(myFunction);
+            text += "</ol>";
+            document.write("My Friends : " + text + "<br>");
+            document.write("Length of array is " + friend.length + "<br>");
+            function myFunction(value) {
+                text += "<li>" + value + "</li>";
+            }
 
         }
         function format3() {
+            document.write("My Friends : <br>");
             for (let f of friend) {
                 document.write(f + "<br>");
             }
             document.write("Length of array is " + friend.length + "<br>");
         }
         function format4() {
+            document.write("My Friends : <br>");
             for (var i in friend) {
                 document.write("Friend[" + (i) + "] " + friend[i] + "<br>");
             }
             document.write("Length of array is " + friend.length + "<br>");
-            function seperate() {
+        }
+        function seperate() {
+            let clg_frds = "Hari Siva Arjun Haif Aadil Abinand";
+            var friends = clg_frds.split(" ");
+            document.write("My College Friends : " + friends + "<br>");
+            document.write("Length of array is " + friends.length + "<br>");
+        }
+        function date() {
+            var date = new Date();
+            var day = date.getDate();
+            var month = date.getMonth() + 1;
+            var year = date.getFullYear();
+            document.write("Date is: " + day + "-" + month + "-" + year + "<br>");
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            document.write("Time is " + h + ":" + m + ":" + s + "<br>");
 
-            }
-            function date() {
-                const date = new date();
-                const n = date.toDateString();
-                const time = date.toLocaleTimeString();
-                document.write("Date : " + n);
-                document.write("Time : " + time);
-            }
         }
     </script>
 </head>
@@ -84,8 +113,8 @@
     <hr>
     <label>Add Friends names at End</label><br><br>
     <label>Enter Friends names</label><br>
-    <input type="text" name="frds" id="frds"><br><br>
-    <button type="button" onclick="">Add at end</button><br><br>
+    <input type="text" name="frds" id="frd"><br><br>
+    <button type="button" onclick="add_end()">Add at end</button><br><br>
     <hr>
     <label>Delete Friends names at Beginning</label><br><br>
     <button type="button" onclick="delete_beginning()">Delete at beginning</button><br><br>
