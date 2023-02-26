@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script>
+        function validate() {
+            var name = document.login.uname.value;
+            var pass = document.login.passwd.value;
+            var cmpass = document.login.cmpasswd.value;
+            var pass_expression = /^([A-Za-z])([0-9])([!@#$%^&*]){8,15}+$/;
+            var letters = /^[A-Za-z]+$/;
+            if (name == null) {
+                alert("Username should not be blank");
+            }
+            else if (letters != name) {
+                alert("Name field required only alphabet characters");
+            }
+            else if (pass == '') {
+                alert("Please enter Password");
+            }
+            else if (cmpass == '') {
+                alert("Enter Confirm Password");
+            }
+            else if (pass_expression != pass) {
+                alert("Restricted the Password Condition");
+            }
+            else if (pass != cmpass) {
+                alert('Password not Matched');
+            }
+            else {
+                alert("Thank you for Registering!!");
+                window.location = "https://www.cgvakindia.com/";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="login" method="post" action="">
+        <h1 style="font-family: 'Times New Roman';text-align: center;">REGISTRATION FORM</h1><br><br>
+        <fieldset>
+            <legend><strong>LOGIN CREDENTIALS</strong></legend><br>
+            <b>
+                Username : <input type="text" name="uname"><br><br>
+                Password : <input type="password" name="passwd"><br><br>
+                Confirm Password : <input type="password" name="cmpasswd"><br><br>
+                <input type="submit" value="Login" onclick="validate()">
+                <input type="reset" value="Clear">
+            </b>
+        </fieldset>
+    </form>
+</body>
+
+</html>
