@@ -34,7 +34,6 @@ function validate() {
     var name = document.login.uname.value;
     var pass = document.login.passwd.value;
     var cmpass = document.login.cmpasswd.value;
-    console.log(name)
     var pass_expression = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
     var letters = /^[A-Za-z]+$/;
     if (name == "") {
