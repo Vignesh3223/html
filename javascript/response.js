@@ -23,9 +23,16 @@ function Submit() {
     else if (age < 18) {
         alert(fullname + " have to wait for 18 years");
     }
-    else {
-        alert("Registered Successfully ! Thank You");
-    }
+    alert("Registered Successfully ! Thank You");
+    document.write("<h1><center>Trainee details</center></h1>")
+    document.write(" <b> Firstname " + " : </b>" + fname);
+    document.write("<br><br>");
+    document.write(" <b> Lastname " + " : </b>" + lname);
+    document.write("<br><br>");
+    document.write(" <b> Gender " + " : </b>" + gender);
+    document.write("<br><br>");
+    document.write(" <b> D.O.B" + " : </b>" + dob);
+    document.write("<br><br>");
 }
 
 
