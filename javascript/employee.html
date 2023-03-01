@@ -1,32 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee-object</title>
+    <title>Employee</title>
 </head>
+
 <body>
     <script>
-        var person=
-        {
-            constructor (name, age, gender, address)
-            {
-                this.name = "Rahul";
-                this.age = 28;
-                this.gender = "Male";
-                this.address = "4B, NanaNani Apartments, Vadavalli, CBE-025.";
+        class Person {
+            constructor(name, age, gender, address) {
+                this.name = name;
+                this.age = age;
+                this.gender = gender;
+                this.address = address;
+
+                if (this.constructor == Person) {
+                    throw new Error("You Can`t create an instance for abstract class.");
+                }
+            }
+            display() {
+                throw new Error("Abstract class doesn`t have any implementation.");
             }
         }
-        display()
-        {
-            var name=document.person.name.value;
-            document.write("The Person Details");
-            document.write("Person Name : " +this.name);
-            document.write("Person Age : " +this.age);
-            document.write("Person Gender : " +this.gender);
-            document.write("Address : " +this.address);
+        class Employee extends Person {
+            constructor(name, age, gender, address, emp_code, department, designation, salary) {
+                super(name, age, gender, address);
+                this.emp_code = emp_code;
+                this.department = department;
+                this.designation = designation;
+                this.salary = salary;
+            }
+
+            display() {
+                document.write("<h1><center>Personal Details</center></h1>");
+                document.write("<br><br>");
+                document.write("Name of the Person : " + this.name);
+                document.write("<br><br>");
+                document.write("Age of the Person : " + this.age);
+                document.write("<br><br>");
+                document.write("Gender of the Person : " + this.gender);
+                document.write("<br><br>");
+                document.write("Address of the Person : " + this.address);
+                document.write("<h1><center>Employee Details</center></h1>");
+                document.write("<br><br>");
+                document.write(" Employee code : " + this.emp_code);
+                document.write("<br><br>");
+                document.write("Department : " + this.department);
+                document.write("<br><br>");
+                document.write("Designation : " + this.designation);
+                document.write("<br><br>");
+                document.write("Salary : " + this.salary);
+
+            }
         }
+        var emp1 = new Employee("Sara", 24, "Female", "Chennai", 101, "Technical", "Back-end Developer", 20000);
+        emp1.display();
     </script>
 </body>
+
 </html>
