@@ -1,7 +1,7 @@
 function Submit() {
     var fname = document.regform.fname.value;
     var lname = document.regform.lname.value;
-    var fullname = fname + " " +lname;
+    var fullname = fname + " " + lname;
     var dob = document.regform.date.value;
     var gender = document.regform.gender.value;
     var d1 = new Date(dob);
@@ -14,13 +14,13 @@ function Submit() {
     else if (lname == "") {
         alert("Enter the Last Name");
     }
-    else if(dob == ""){
+    else if (dob == "") {
         alert("Enter the Date");
     }
     else if (age > 18) {
         alert(fullname + " is eligible to vote ");
     }
-    else if (age < 18) {
+    else {
         alert(fullname + " have to wait for 18 years");
     }
     alert("Registered Successfully ! Thank You");
@@ -34,8 +34,6 @@ function Submit() {
     document.write(" <b> D.O.B" + " : </b>" + dob);
     document.write("<br><br>");
 }
-
-
 
 function validate() {
     var name = document.login.uname.value;
