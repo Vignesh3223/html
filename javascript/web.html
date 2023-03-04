@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Details</title>
     <style>
-         h1 {
+        h1 {
             color: crimson;
             font-family: algerian;
             text-align: center;
@@ -19,9 +19,9 @@
             background-color: aquamarine;
         }
 
-        #one {
+        form {
             border-style: double;
-            border-radius: 5px;
+            border-radius: 10px;
             padding: 10px;
             text-align: justify;
             border-color: whitesmoke;
@@ -43,7 +43,7 @@
 
 <body>
     <h1>Personal Details</h1>
-    <form name="detailsform" id="one" method="get" action=" ">
+    <form name="" method="post" action="">
         <label>Name</label>
         <input type="text" name="name" placeholder="please enter name"><br><br>
         <label>DOB</label>
@@ -73,7 +73,10 @@
         <input type="checkbox" name="interest">Reading<br>
         <input type="checkbox" name="interest">Painting<br>
         <input type="checkbox" name="interest">Writing<br><br>
+        <button type="button" onclick="upload()">Upload</button>
+        <button type="reset">Clear</button>
     </form>
+    <script src="display.js"></script>
 </body>
 
 </html>
