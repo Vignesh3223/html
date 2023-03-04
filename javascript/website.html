@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <style>
+        h1 {
+            color: crimson;
+            font-family: algerian;
+            text-align: center;
+            text-decoration: underline;
+            text-transform: capitalize;
+            font-size: xx-large;
+            font-weight: bolder;
+            font-style: oblique;
+            background-color: aquamarine;
+        }
+
+        #one {
+            border-style: double;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: justify;
+            border-color: whitesmoke;
+            font-family: Times new roman;
+            font-size: larger;
+            font-weight: bold;
+            font-style: oblique;
+            color: rgb(252, 240, 9);
+        }
+
+        body {
+            background: #ff00cc;
+            background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+            background: linear-gradient(to right, #333399, #ff00cc);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personal Details</h1>
+    <form name="detailsform" id="one" method="get" action=" ">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="please enter name"><br><br>
+        <label>DOB</label>
+        <input type="date" name="date"><br><br>
+        <label>Gender</label>
+        <input type="radio" name="gen">Female
+        <input type="radio" name="gen">Male<br><br>
+        <label>Father Name</label>
+        <input type="text" name="fname" placeholder="please enter name"><br><br>
+        <label>Address</label>
+        <textarea name="addr" rows="5" cols="50"></textarea><br><br>
+        <label>Mobile number</label>
+        <input type="tel" name="mob" pattern="[0-9]{10}" placeholder="please enter mobile.no"><br><br>
+        <label>Landline number</label>
+        <input type="tel" name="lan" pattern="[0-9]{2}-[0-9]{3}-[0-9]{6}"
+            placeholder="please enter landline.no"><br><br>
+        <label>E-mail ID</label>
+        <input type="email" name="mail" placeholder="please enter email address"><br><br>
+        <label>College Name</label>
+        <input type="text" name="clgname" placeholder="please enter College name"><br><br>
+        <label>Marks</label>
+        <input type="text" name="mark" pattern="[0-9]{2}.[0-9]{2}" placeholder="please enter marks"><br><br>
+        <label>Personal Interest</label><br>
+        <input type="checkbox" name="interest">Singing<br>
+        <input type="checkbox" name="interest">Dancing<br>
+        <input type="checkbox" name="interest">Swimming<br>
+        <input type="checkbox" name="interest">Reading<br>
+        <input type="checkbox" name="interest">Painting<br>
+        <input type="checkbox" name="interest">Writing<br><br>
+        <input type="submit" value="Upload" onclick="upload()">
+        <input type="reset" value="Clear">
+    </form>
+    <script src="display.js">
+    </script>
+</body>
+
+</html>
