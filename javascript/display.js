@@ -10,6 +10,49 @@ function upload() {
     var college = document.myform.clgname.value;
     var marks = document.myform.mark.value;
     var interest = document.myform.interest.value;
+    if (name == "") {
+        alert("Please enter a NAME");
+    }
+    else if (!(letters).test(name)) {
+        alert("Conditions restricted");
+    }
+    else if (dob == "") {
+        alert("Please choose a DATE");
+    }
+    else if (gender == "") {
+        alert("Please choose a gender");
+    }
+    else if (fathname == "") {
+        alert("Please enter a NAME");
+    }
+    else if (!(letters).test(fathname)) {
+        alert("Conditions restricted");
+    }
+    else if (address == "") {
+        alert("Please enter a valid ADDRESS");
+    }
+    else if (mobile == "") {
+        alert("Please enter a MOBILE NUMBER")
+    }
+    else if (landline == "") {
+        alert("Please enter a LANDLINE NUMBER")
+    }
+    else if (email == "") {
+        alert("Please enter an EMAIL ID");
+    }
+    else if (college == "") {
+        alert("Please enter the COLLEGE NAME");
+    }
+    else if (marks == "") {
+        alert("Please enter the MARKS");
+    }
+    else if(interest == ""){
+        alert("Please choose atleast ONE");
+    }
+    else{
+        alert("Everything is Perfect")
+    }
+    alert("Uploaded Successfully , Thank You!!");
     document.write("<h1><center><u>PERSONAL DETAILS</u></center></h1>");
     document.write("<br><br>");
     document.write("<b> Name : </b>" + name);
