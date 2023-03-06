@@ -1,0 +1,124 @@
+.nav {
+    display: inline;
+    justify-content: center;
+    background-image: url("assets/Shape.png");
+    width: auto;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.nav li {
+    padding: 20px;
+    color: white;
+    justify-content: center;
+    font-size: x-large;
+    font-family: Serif;
+    font-style: normal;
+}
+
+#one {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.group1 {
+    background-image: url("assets/coffe.png");
+    height: 770px;
+}
+
+#h1 {
+    text-align: center;
+    font-family: serif;
+    font-size: 550%;
+    color: wheat;
+    font-weight: bolder;
+}
+
+#par1 {
+    color: wheat;
+    text-align: center;
+    font-family: serif;
+    font-size: larger;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.btn-danger {
+    margin-left: 47%;
+
+}
+
+.group2 {
+    background-image: url("assets/back2.png");
+    height: 800px;
+    
+}
+
+#two {
+    display: block;
+    float: left;
+    margin-top: 5px;
+    margin-left: 100px;
+}
+
+#par2 {
+    display: inline-block;
+    color: wheat;
+    font-family: serif;
+    font-size: 260%;
+    margin-left: 45%;
+}
+
+#par3 {
+    display: inline-block;
+    color: wheat;
+    font-family: serif;
+    font-size: 300%;
+    margin-left: 45%;
+}
+
+#par4 {
+    display: inline-block;
+    color: wheat;
+    font-family: serif;
+    font-size: 100%;
+    margin-left: 45%;
+    margin-right: 10%;
+}
+
+.btn1 {
+    background-color: wheat;
+    color: rgb(250, 36, 36);
+    margin-left: 24%;
+}
+
+.group3 {
+    background-image: url("assets/back3.png");
+    height: 1000px;
+}
+
+#hree {
+    float: left;
+    position: absolute;
+}
+
+#par5 {
+    display: inline-block;
+    color: black;
+    font-family: serif;
+    font-size: 300%;
+    margin-left: 55%;
+}
+
+#par6 {
+    display: inline-block;
+    color: black;
+    font-family: serif;
+    font-size: 100%;
+    margin-left: 55%;
+    margin-right: 10%;
+}
