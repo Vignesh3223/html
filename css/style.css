@@ -28,7 +28,7 @@
 .group1 {
     position: relative;
     background-image: url("assets/coffe.png");
-    filter: brightness(40%);
+    filter: brightness(60%);
     height: 770px;
 }
 
@@ -38,6 +38,7 @@
     font-size: 550%;
     color: rgb(254,237,218);
     font-weight: bolder;
+    
 }
 
 #par1 {
