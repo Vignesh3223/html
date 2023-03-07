@@ -53,16 +53,18 @@
 }
 
 .group2 {
+    position: relative;
     background-image: url("assets/back2.png");
-    height: 800px;
+    height: 580px;
     
 }
 
 #two {
     display: block;
     float: left;
-    margin-top: 5px;
-    margin-left: 100px;
+    position: absolute;
+    top: 130px;
+    left: 180px;
 }
 
 #par2 {
@@ -93,32 +95,139 @@
 .btn1 {
     background-color: wheat;
     color: rgb(250, 36, 36);
-    margin-left: 24%;
+    margin-left: 45%;
 }
 
 .group3 {
+    position: relative;
     background-image: url("assets/back3.png");
-    height: 1000px;
+    height: 780px;
 }
 
 #hree {
+    display: block;
     float: left;
     position: absolute;
+    top: 0%;
 }
 
 #par5 {
     display: inline-block;
     color: black;
+    position: absolute;
     font-family: serif;
     font-size: 300%;
-    margin-left: 55%;
+    left: 55%;
+    top: 15%;
 }
 
 #par6 {
     display: inline-block;
     color: black;
+    position: absolute;
     font-family: serif;
     font-size: 100%;
-    margin-left: 55%;
-    margin-right: 10%;
+    top: 40%;
+    left: 55%;
+    right: 10%;
+}
+a{
+    display: inline-block;
+    color: black;
+    position: absolute;
+    font-family: serif;
+    font-size: 100%;
+    top: 55%;
+    left: 55%;
+    right: 10%;
+}
+.group4 {
+    position: relative;
+    background-image: url("assets/back2.png");
+    height: 900px;
+    
+}
+#par7{
+    display: block;
+    font-family: serif;
+    font-size: 300%;
+    position: absolute;
+    top:10%;
+    left: 47%;
+    color: wheat;
+    font-weight: bolder;
+}
+#par8{
+    display: block;
+    text-align:center;
+    font-family: serif;
+    font-size: 150%;
+    position: absolute;
+    top:25%;
+    left: 10%;
+    right: 10%;
+    color: wheat;
+}
+.card1{
+    position: absolute;
+    top: 45%;
+    left:2%;
+    width:30%;
+    height:27%;
+}
+#four{
+    height:100%;
+}
+.btn2{
+    margin-left: 15%;
+}
+.title1{
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 280%;
+}
+.text1{
+    font-family: serif;
+}
+.card2{
+
+    top: 16%;
+    left:35%;
+    width:30%;
+    height:27%;
+}
+#five{
+    height:100%;
+}
+.btn3{
+    margin-left: 15%;
+}
+.title2{
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 280%;
+}
+.text2{
+    font-family: serif;
+}
+.card3{
+
+    top: -13%;
+    left:68%;
+    width:30%;
+    height:27%;
+}
+#six{
+    height:100%;
+}
+.btn4{
+    margin-left: 15%;
+}
+.title3{
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 280%;
+}
+.text3{
+    font-family: serif;
 }
