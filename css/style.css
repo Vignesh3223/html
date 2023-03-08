@@ -25,7 +25,7 @@
 
 .group1 {
     position: relative;
-    background-image: url("assets/coffe.png");
+    background-image: url("assets/coffee.png");
     height: 770px;
 }
 
@@ -78,7 +78,7 @@
 
 #par3 {
     position: absolute;
-    color:#feedda;
+    color: #feedda;
     font-family: serif;
     font-size: 300%;
     font-weight: bolder;
@@ -177,7 +177,7 @@ a {
     top: 25%;
     left: 10%;
     right: 10%;
-    color:  #f8eed3;
+    color: #f8eed3;
 }
 
 .card1 {
@@ -262,7 +262,7 @@ a {
     position: absolute;
     top: 10%;
     left: 47%;
-    color:  #b13941;
+    color: #b13941;
     font-weight: bolder;
 }
 
@@ -274,7 +274,7 @@ a {
     top: 25%;
     left: 10%;
     right: 10%;
-    color:  #b13941;
+    color: #b13941;
 }
 
 .card4 {
@@ -285,7 +285,7 @@ a {
 }
 
 .btnA {
-    background-color:#f8eed3;
+    background-color: #f8eed3;
     color: #b13941;
     font-family: serif;
     font-weight: bolder;
@@ -327,8 +327,8 @@ a {
 }
 
 .btnB {
-    background-color:#f8eed3;
-    color:  #b13941;
+    background-color: #f8eed3;
+    color: #b13941;
     font-family: serif;
     font-weight: bolder;
     border: none;
@@ -341,7 +341,7 @@ a {
 
 .btnB span {
     border-style: solid;
-    border-color:  #b13941;
+    border-color: #b13941;
     padding: 2px;
 }
 
@@ -370,7 +370,7 @@ a {
 
 .btnC {
     background-color: #f8eed3;
-    color:  #b13941;
+    color: #b13941;
     font-family: serif;
     font-weight: bolder;
     border: none;
@@ -383,7 +383,7 @@ a {
 
 .btnC span {
     border-style: solid;
-    border-color:  #b13941;
+    border-color: #b13941;
     padding: 2px;
 }
 
@@ -530,7 +530,7 @@ a {
     background-color: #efefef;
     border-style: solid;
     border-width: 1px;
-    border-color:  #b0b0b0;
+    border-color: #b0b0b0;
 }
 
 .input3 {
@@ -539,7 +539,7 @@ a {
     position: absolute;
     left: 50%;
     top: 44%;
-    background-color:#efefef;
+    background-color: #efefef;
     border-style: solid;
     border-width: 1px;
     border-color: #b0b0b0;
@@ -572,7 +572,7 @@ a {
     left: 19%;
     top: 15%;
     font-size: 150%;
-    color:  #f8eed3;
+    color: #f8eed3;
     font-weight: bold;
 }
 
@@ -600,7 +600,7 @@ a {
     left: 36%;
     top: 15%;
     font-size: 150%;
-    color:  #f8eed3;
+    color: #f8eed3;
     font-weight: bold;
 }
 
@@ -638,7 +638,7 @@ a {
     left: 61%;
     top: 15%;
     font-size: 150%;
-    color:  #f8eed3;
+    color: #f8eed3;
     font-weight: bold;
 }
 
