@@ -1,7 +1,7 @@
 function upload() {
     var name = document.myform.name.value;
     var dob = document.myform.date.value;
-    var gender = document.myform.gen.value;
+    var gender = document.myform.gender.value;
     var fathname = document.myform.fname.value;
     var address = document.myform.addr.value;
     var mobile = document.myform.mob.value;
@@ -17,7 +17,7 @@ function upload() {
     var write = document.myform.writing.checked;
     var letters = /^([A-Za-z]{2,20})+$/;
     var mob = /^\d{10}$/;
-    var tele = /^\(?(\d{2})\)?[-]?(\d{3})[-]?(\d{6})$/
+    var tele = /^\(?(\d{2})\)?[-]?(\d{3})[-]?(\d{6})$/;
     if (name == "") {
         alert("Please enter a NAME");
         return false;
@@ -102,26 +102,28 @@ function upload() {
     if (sing) {
         document.write("Singing");
     }
-    document.write(" , ");
+    document.write("&nbsp")
     if (dance) {
         document.write("Dancing");
     }
-    document.write(" , ");
+    document.write("&nbsp")
     if (read) {
         document.write("Reading");
     }
-    document.write(" , ");
+    document.write("&nbsp")
     if (swim) {
         document.write("Swimming");
     }
-    document.write(" , ");
+    document.write("&nbsp")
     if (paint) {
+        
         document.write("Painting");
     }
-    document.write(" , ");
+    document.write("&nbsp")
     if (write) {
         document.write("Writing");
     }
+    document.write("&nbsp")
     document.write("<br><br>");
     document.write("<h1><center>THANK YOU</center></h1>");
 }
