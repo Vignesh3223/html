@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = ['a', 'b', 'c', 'd', 'e'];
+        var iterator = a.entries();
+        for (let e of iterator) {
+            document.write(e + "<br>");
+        }
+    </script>
+    <hr>
+    <script>
+        var a = [1, 2, 3, 4, 5];
+        document.write(a);
+        a.reverse();
+        document.writeln("<br>");
+        document.write(a); 
+    </script>
+    <hr>
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango", "Apple"];
+        var a = fruits.indexOf("Apple");
+        document.write(a);
+        document.writeln("<br>");
+        a = fruits.lastIndexOf("Apple");
+        document.write(a);
+    </script>
+    <hr>
+    <p id="demo"></p>
+    <script>
+        var fruits = "Banana Orange Apple Mango";
+        document.getElementById("demo").innerHTML = "Display using toString() :" + fruits.toString();
+    </script>
+    <hr>
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        var a = fruits.join();
+        document.write(a);
+        console.log('Array values using Join');
+        console.log(a);
+        console.log(fruits);
+    </script>
+    <hr>
+    <script>
+        var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"]
+        var a = fruits.slice(-3, -1);
+        document.write("Negative slice values " + a);
+        document.writeln("<br/>");
+        var b = fruits.slice(1, 4);
+        document.write("Positive slice values " + b);
+    </script>
+    <hr>
+    <script>
+        var arr = ["Orange","Banana","Apple"];
+        document.write("Actual Array = " + arr + "<br>");
+        var s = arr.sort();
+        document.write("Sorted Array = " + s + "<br>");
+    </script>
+    <hr>
+    <script>
+        var words = ['Hemanth', 'Harshan', 'Divya Prakash', 'Dhana Prakash', 'Vasanth'];
+        var result = words.filter(word => word.length >= 13 );
+        document.write(result);
+    </script><br>
+    Copyright&copy
+    <p>Copyright<span>&#169</span></p>
+</body>
+
+</html>
