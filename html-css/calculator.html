@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 600px;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 150px;
+            padding: 5px;
+            background-color: black;
+        }
+
+        td {
+            padding: 20px;
+        }
+
+        button {
+            width: 80px;
+            height: 80px;
+            margin-right: 5px;
+            background-color: rgb(18, 206, 143);
+            font-size: xx-large;
+        }
+
+        #res {
+            width: 730px;
+            height: 50px;
+            text-align: right;
+            background-color: rgb(205, 233, 233);
+            font-size: x-large;
+        }
+
+        body {
+            background: #1f4037;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #04a057, #000000);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #04a057, #000000);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        h1 {
+            font-family: algerian;
+            font-size: xx-large;
+            font-style: oblique;
+            font-weight: 500;
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <marquee>CALCULATOR</marquee>
+    </h1>
+    <table border="1">
+        <thead>
+            <td colspan="6"><input type="text" id="res" placeholder="0"></td>
+        </thead>
+        <tbody>
+            <tr>
+                <td><button id="one" onclick="res.value +=1">1</button></td>
+                <td><button id="two" onclick="res.value +=2">2</button></td>
+                <td><button id="three" onclick="res.value +=3">3</button></td>
+                <td><button id="four" onclick="res.value+=4">4</button></td>
+                <td><button id="plus" onclick="res.value+='+'">+</button></td>
+                <td><button id="minus" onclick="res.value+='-'">-</button></td>
+
+            </tr>
+            <tr>
+                <td><button id="five" onclick="res.value+=5">5</button>
+                <td> <button id="six" onclick="res.value+=6">6</button>
+                <td> <button id="seven" onclick="res.value+=7">7</button>
+                <td> <button id="eight" onclick="res.value+=8">8</button>
+                <td> <button id="multiply" onclick="res.value+='*'">*</button>
+                <td> <button id="divide" onclick="res.value+='/'">/</button>
+                </td>
+            </tr>
+            <tr>
+                <td><button id="nine" onclick="res.value+=9">9</button></td>
+                <td> <button id="zero" onclick="res.value+=0">0</button></td>
+                <td><button id="doublezero"
+                        onclick="document.getElementById('res').value = document.getElementById('res').value.substring(0, document.getElementById('res').value.length - 1)">X</button></td>
+                <td> <button id=" dot" onclick="res.value+='.'">.</button></td>
+                <td><button id="equalto" onclick="res.value=eval(res.value)">=</button></td>
+                <td><button id="ac" onclick="res.value=''">AC</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
